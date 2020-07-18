@@ -16,11 +16,11 @@ app.get("/venus", function(req,res){
     res.render("venus.html");
 });
 
-app.get("/venus", function(req,res){
+app.get("/earth", function(req,res){
     res.render("earth.html");
 });
 
-app.get("/home", function(req,res){
+app.get("/index", function(req,res){
     res.render("index.html");
 });
 
