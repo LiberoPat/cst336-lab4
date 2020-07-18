@@ -13,10 +13,16 @@ app.get("/mercury", function(req,res){
 });
 
 app.get("/venus", function(req,res){
-    res.send("This will be Venus");
+    res.render("venus.html");
 });
 
+app.get("/venus", function(req,res){
+    res.render("earth.html");
+});
 
+app.get("/home", function(req,res){
+    res.render("index.html");
+});
 
 //starting server
 app.listen(process.env.PORT, process.env.IP, function(){
